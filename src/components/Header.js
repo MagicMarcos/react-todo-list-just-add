@@ -1,16 +1,16 @@
-import React from "react";
-
-const Header = (props) => {
-  return (
-    <div>
-      <h1 style={headerStyle}>{props.title}</h1>
-    </div>
-  );
+import React from 'react';
+// header constant takes in some prop as an argument and returns a header with the desired style and title
+const Header = props => {
+	return (
+		<div>
+			<h1 style={headerStyle}>{props.title}</h1>
+		</div>
+	);
 };
 
 const headerStyle = {
-  fontSize: "40px",
-  textDecoration: "underline",
+	fontSize: '40px',
+	textDecoration: 'underline',
 };
 
 export default Header;
