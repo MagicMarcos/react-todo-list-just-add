@@ -5,7 +5,8 @@ import Todo from './Todo';
 const List = ({ todos }) => {
 	return (
 		<div>
-			//map through our todos giving it an id and content
+			//map through our todos giving it an id and content // when using map in
+			react we need to include an id otherwise react will throw an error
 			{todos.map(todo => (
 				<Todo key={todo.id} todo={todo} />
 			))}

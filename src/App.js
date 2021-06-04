@@ -3,10 +3,15 @@ import Header from './components/Header';
 import List from './components/List';
 import AddTodo from './components/AddTodo';
 
+// intializes our app
 function App() {
 	// use array destructuring and set equal to the useState method which has another destructured array containing our todo items and their ids as objects
+
+	//first element (todos) is the initial state and the second one (setTodos) is a function that is used for updating the state.
+
 	const [todos, setTodos] = useState([
 		{
+			// we set these ids to avoid errors
 			id: 1,
 			item: 'Drink Water',
 		},
@@ -25,6 +30,7 @@ function App() {
 		const id = Math.ceil(Math.random() * 100000);
 		const newTodo = { id, ...todo };
 		//call the setTodos function, passing in a destructured array containing todos and newTodo
+		// appends newTodo to existing todo
 		setTodos([...todos, newTodo]);
 	};
 
