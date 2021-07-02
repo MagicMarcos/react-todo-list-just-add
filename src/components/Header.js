@@ -7,7 +7,7 @@ const Header = props => {
 		</div>
 	);
 };
-
+//styles the header and allows us to repeat
 const headerStyle = {
 	fontSize: '40px',
 	textDecoration: 'underline',
